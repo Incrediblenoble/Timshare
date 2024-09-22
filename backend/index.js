@@ -20,7 +20,8 @@ require("./models/verificationModel");
 const app = express();
 const server = createServer(app);
 
-const allowedOrigins = [process.env.FRONTEND_URL]; // Add more origins as needed
+// process.env.FRONTEND_URL
+const allowedOrigins = ["http://localhost:3000"]; // Add more origins as needed
 app.use(
   cors({
     origin: function (origin, callback) {
