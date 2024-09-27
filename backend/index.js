@@ -13,6 +13,8 @@ const fileShareRoutes = require("./routes/fileShareRoutes");
 const dotenv = require("dotenv");
 const { createServer } = require("node:http");
 
+dotenv.config();
+
 require("./db");
 require("./models/userModel");
 require("./models/verificationModel");
